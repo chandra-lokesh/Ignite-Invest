@@ -1,0 +1,38 @@
+Q1. What is the purpose of the project?
+Q2. What are the main features/modules?
+Q3. Who are the users (Admin, User, etc.)?
+Q4. What tech stack will be used (Spring Boot, React, etc.)?
+
+
+
+A1. To make a web application that connects investors and startups
+A2. startups can search for investors or get recommended inverstors considering their preferences for investment and vice versa
+A3. Startups, Investors
+A4. backend- springboot, frontend- vuejs, db- postgres
+
+
+
+Expected Tech Stack Suggestions
+Backend (fixed):
+Spring Boot + Gradle
+
+PostgreSQL 
+
+JWT + Spring Security
+
+Feign Clients + Eureka (if microservices)
+
+Frontend (Not fixed):
+Vue.js + Vue Router + Pinia (for state)
+
+Tailwind CSS or Vuetify
+
+Others (no idea):
+
+Email: SendGrid or Mailgun
+
+Deployment: Docker + Kubernetes (Future scale)
+
+CI/CD: GitHub Actions
+
+
