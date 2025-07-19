@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Ignite-Invest.iml" filepath="$PROJECT_DIR$/.idea/Ignite-Invest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Startup-Service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Startup-Service.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/User-Service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/User-Service.main.iml" />
     </modules>
   </component>

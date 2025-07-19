@@ -1,12 +1,11 @@
-package com.personalproject.dto;
+package com.personalproject.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.personalproject.roles.UserRoles;
+import com.personalproject.enums.UserRole;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import lombok.Data;
-import lombok.extern.slf4j.Slf4j;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.ZonedDateTime;
@@ -14,7 +13,7 @@ import java.util.UUID;
 
 @Entity
 @Data
-public class UserDto {
+public class UserEntity {
 
     @Id
     @GeneratedValue
@@ -24,7 +23,7 @@ public class UserDto {
     private String name;
     private String email;
     private String password;
-    private UserRoles userRoles;
+    private UserRole userRole;
 
     @CreationTimestamp
     private ZonedDateTime createdAt;

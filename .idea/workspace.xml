@@ -4,13 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9272e722-9409-4c0e-9a1a-8953670373e2" name="Changes" comment="" />
+    <list default="true" id="c9a72ea8-9dd8-480d-b77e-b144ee4d66fa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Backend/Startup-Service/src/main/java/com/personalproject/client/UserClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/Startup-Service/src/main/java/com/personalproject/controller/TestContoller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/Startup-Service/src/main/java/com/personalproject/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/Startup-Service/src/main/java/com/personalproject/entity/StartupEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/Startup-Service/src/main/java/com/personalproject/enums/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/Startup-Service/src/main/java/com/personalproject/service/StarupService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/User-Service.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/Startup-Service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/Startup-Service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/Startup-Service/src/main/java/com/personalproject/StartupServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/Startup-Service/src/main/java/com/personalproject/StartupServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/Startup-Service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/Startup-Service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/User-Service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/User-Service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/User-Service/src/main/java/com/personalproject/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/User-Service/src/main/java/com/personalproject/UserServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/User-Service/src/main/java/com/personalproject/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/User-Service/src/main/java/com/personalproject/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/User-Service/src/main/java/com/personalproject/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/User-Service/src/main/java/com/personalproject/entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/User-Service/src/main/java/com/personalproject/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/User-Service/src/main/java/com/personalproject/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/User-Service/src/main/java/com/personalproject/roles/UserRoles.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/User-Service/src/main/java/com/personalproject/enums/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/User-Service/src/main/java/com/personalproject/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/User-Service/src/main/java/com/personalproject/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/User-Service/src/main/java/com/personalproject/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/User-Service/src/main/java/com/personalproject/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/User-Service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/User-Service/src/main/resources/application.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/Backend/Eureka-Server">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Backend/Startup-Service">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/Backend/User-Service">
       <ProjectState />
     </projectState>
@@ -23,7 +53,7 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="User-Service" type="f1a62948:ProjectNode" />
+                <item name="Startup-Service" type="f1a62948:ProjectNode" />
               </path>
             </expand>
             <select />
@@ -32,28 +62,76 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 4
-}]]></component>
-  <component name="ProjectId" id="2zp7RLPOkY0ivGCzGZ3qUQdAEoN" />
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;chandra-lokesh&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/chandra-lokesh/Ignite-Invest.git&quot;,
+    &quot;accountId&quot;: &quot;170371b8-2aab-4c15-9dc4-ec131e8be6d4&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2zzb4kVcrFCBWSMQmxmY03mp5wT" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.Eureka-Server [:com.personalproject.EurekaServerApplication.main()].executor": "Run",
+    "Gradle.Startup-Service [:com.personalproject.StartupServiceApplication.main()].executor": "Run",
     "Gradle.User-Service [:com.personalproject.UserServiceApplication.main()].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/286199/Desktop/Ignite-Invest/Backend/User-Service"
+    "last_opened_file_path": "C:/Users/286199/Desktop/Capstone-Project"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.StartupServiceApplication">
+    <configuration name="EurekaServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.personalproject.EurekaServerApplication" />
+      <module name="Eureka-Server.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.personalproject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StartupServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.personalproject.StartupServiceApplication" />
+      <module name="Startup-Service.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.personalproject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.personalproject.UserServiceApplication" />
       <module name="User-Service.main" />
@@ -69,6 +147,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EurekaServerApplication" />
+        <item itemvalue="Application.StartupServiceApplication" />
         <item itemvalue="Application.UserServiceApplication" />
       </list>
     </recent_temporary>
@@ -76,11 +156,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9272e722-9409-4c0e-9a1a-8953670373e2" name="Changes" comment="" />
-      <created>1752416153378</created>
+      <changelist id="c9a72ea8-9dd8-480d-b77e-b144ee4d66fa" name="Changes" comment="" />
+      <created>1752736661604</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1752416153378</updated>
+      <updated>1752736661604</updated>
     </task>
     <servers />
   </component>

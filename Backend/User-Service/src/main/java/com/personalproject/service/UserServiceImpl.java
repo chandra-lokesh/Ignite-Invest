@@ -1,10 +1,9 @@
 package com.personalproject.service;
 
-import com.personalproject.dto.UserDto;
+import com.personalproject.entity.UserEntity;
 import com.personalproject.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
@@ -18,36 +17,37 @@ public class UserServiceImpl implements UserService{
     UserRepository userRepository;
 
     @Override
-    public ResponseEntity<UserDto> createUser(UserDto userDto) {
-        UserDto resUserDto = userRepository.save(userDto);
-        if(resUserDto.equals(userDto))
-            return ResponseEntity.ok(resUserDto);
+    public ResponseEntity<UserEntity> createUser(UserEntity userEntity) {
+        UserEntity resUserEntity = userRepository.save(userEntity);
+        if(resUserEntity.equals(userEntity))
+            return ResponseEntity.ok(resUserEntity);
         return ResponseEntity.internalServerError().body(null);
     }
 
     @Override
-    public ResponseEntity<UserDto> updateUser(UserDto userDto) {
-        UserDto existingUser = userRepository.findByEmail(userDto.getEmail());
+    public ResponseEntity<UserEntity> updateUser(UserEntity userEntity) {
+        UserEntity existingUser = userRepository.findByEmail(userEntity.getEmail());
         if(existingUser != null){
-            existingUser.setName(userDto.getName());
+            existingUser.setName(userEntity.getName());
             return ResponseEntity.ok().body(userRepository.save(existingUser));
         }
         return ResponseEntity.noContent().build();
     }
 
     @Override
-    public ResponseEntity<List<UserDto>> getAllUsers() {
-        List<UserDto> list = userRepository.findAll();
+    public ResponseEntity<List<UserEntity>> getAllUsers() {
+        List<UserEntity> list = userRepository.findAll();
+        System.out.println("List: " + list);
         if(!list.isEmpty())
             return ResponseEntity.ok(list);
         return ResponseEntity.noContent().build();
     }
 
     @Override
-    public ResponseEntity<UserDto> getUserById(UUID id) {
-        UserDto userDto = userRepository.findById(id).orElse(null);
-        if(userDto != null)
-            return ResponseEntity.ok(userDto);
+    public ResponseEntity<UserEntity> getUserById(UUID id) {
+        UserEntity userEntity = userRepository.findById(id).orElse(null);
+        if(userEntity != null)
+            return ResponseEntity.ok(userEntity);
         return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
     }
 

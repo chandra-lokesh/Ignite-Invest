@@ -1,6 +1,6 @@
 package com.personalproject.controller;
 
-import com.personalproject.dto.UserDto;
+import com.personalproject.entity.UserEntity;
 import com.personalproject.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -10,29 +10,29 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/api/user-service/")
+@RequestMapping("/api/user-service")
 public class UserController {
 
     @Autowired
     UserServiceImpl userService;
 
-    @PostMapping("/create-user/")
-    ResponseEntity<UserDto> createUser(@RequestBody UserDto userDto){
-        return userService.createUser(userDto);
+    @PostMapping("/create-user")
+    ResponseEntity<UserEntity> createUser(@RequestBody UserEntity userEntity){
+        return userService.createUser(userEntity);
     }
 
-    @PutMapping("/update-user/")
-    ResponseEntity<UserDto> updateUser(@RequestBody UserDto userDto){
-        return userService.updateUser(userDto);
+    @PutMapping("/update-user")
+    ResponseEntity<UserEntity> updateUser(@RequestBody UserEntity userEntity){
+        return userService.updateUser(userEntity);
     }
 
-    @GetMapping("/get-all-users/")
-    ResponseEntity<List<UserDto>> getAllUsers(){
+    @GetMapping("/get-all-users")
+    ResponseEntity<List<UserEntity>> getAllUsers(){
         return userService.getAllUsers();
     }
 
     @GetMapping("/get-user-by-id/{id}")
-    ResponseEntity<UserDto> getUserById(@PathVariable UUID id){
+    ResponseEntity<UserEntity> getUserById(@PathVariable UUID id){
         return userService.getUserById(id);
     }
 
