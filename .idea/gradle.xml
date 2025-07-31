@@ -20,6 +20,14 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Backend/User-Auth" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Backend/User-Auth" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/Backend/User-Service" />
         <option name="modules">
           <set>
