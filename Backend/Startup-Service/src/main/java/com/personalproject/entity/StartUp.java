@@ -1,13 +1,14 @@
 package com.personalproject.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.personalproject.enums.Stage;
 import jakarta.persistence.*;
 
 import java.math.BigDecimal;
 import java.util.UUID;
 
 @Entity
-public class StartupEntity {
+public class StartUp {
 
     @Id
     @GeneratedValue
@@ -16,12 +17,13 @@ public class StartupEntity {
 
     private UUID userId;
 
-    private String startupName;
-    private String description;
-    private String stage;
-    private String website;
-    private String industry;
+    private String name;
+    private String bio;
+    private Stage stage;
+    private String industryTags;
     private String location;
+    private String website;
     private BigDecimal fundingNeeded;
     private BigDecimal revenue;
+    private Integer roundsCompleted;
 }

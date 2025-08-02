@@ -13,5 +13,4 @@ public class StartupServiceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(StartupServiceApplication.class, args);
 	}
-
 }

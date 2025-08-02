@@ -1,14 +1,13 @@
 package com.personalproject.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.personalproject.enums.Role;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 import java.util.Collections;
+import java.util.UUID;
 
 public class UserPrinciple  implements UserDetails {
 
@@ -20,7 +19,15 @@ public class UserPrinciple  implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return Collections.singleton(new SimpleGrantedAuthority("USER"));
+        return Collections.singleton(new SimpleGrantedAuthority("ROLE_" +  user.getRole()));
+    }
+
+    public UUID getId() {
+        return user.getId();
+    }
+
+    public Role getRole(){
+        return user.getRole();
     }
 
     @Override
@@ -30,7 +37,7 @@ public class UserPrinciple  implements UserDetails {
 
     @Override
     public String getUsername() {
-        return user.getUsername();
+        return user.getEmail();
     }
 
     @Override
