@@ -12,6 +12,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+import java.util.UUID;
+
 @Service
 public class UserService {
 
@@ -51,5 +54,9 @@ public class UserService {
         userDto.setEmail(userPrinciple.getUsername());
         userDto.setRole(userPrinciple.getRole());
         return userDto;
+    }
+
+    public Optional<MyUser> getUserById(UUID id) {
+        return userRepository.findById(id);
     }
 }

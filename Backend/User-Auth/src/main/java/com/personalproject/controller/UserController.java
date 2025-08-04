@@ -7,6 +7,9 @@ import com.personalproject.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Optional;
+import java.util.UUID;
+
 @RestController
 @RequestMapping("/api/auth")
 public class UserController {
@@ -27,6 +30,11 @@ public class UserController {
     @GetMapping("/me")
     public MyUserDto getCurrentUserProfile(@RequestHeader("Authorization") String authHeader){
         return userService.getCurrentUserProfile(authHeader);
+    }
+
+    @GetMapping("/getUserById/{id}")
+    public Optional<MyUser> getUserById(@PathVariable UUID id){
+        return userService.getUserById(id);
     }
 
 }

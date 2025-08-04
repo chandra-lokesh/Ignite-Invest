@@ -1,19 +1,18 @@
 package com.personalproject.dto;
 
-import com.personalproject.enums.UserRole;
+import com.personalproject.enums.Role;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.ZonedDateTime;
 import java.util.UUID;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserDto {
-    private String name;
+    private UUID id;
     private String email;
     private String password;
-    private UserRole userRoles;
+    private Role role;
 }
