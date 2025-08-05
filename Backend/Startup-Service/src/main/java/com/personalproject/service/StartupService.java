@@ -1,10 +1,12 @@
 package com.personalproject.service;
 
 import com.personalproject.client.UserClient;
+import com.personalproject.dto.UserDto;
 import com.personalproject.entity.Startup;
+import com.personalproject.exception.AlreadyExistingException;
+import com.personalproject.exception.RoleMismatchException;
 import com.personalproject.exception.StartupNotFoundException;
 import com.personalproject.repo.StartupRepository;
-import feign.FeignException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,12 +25,14 @@ public class StartupService {
 
     public Startup createStartup(Startup startup) {
         UUID userId = startup.getUserId();
-        try{
-            userClient.getUserById(userId);
-        } catch (FeignException.NotFound e) {
-            throw new IllegalArgumentException("User with id " + userId + " does not exist");
+        UserDto user = userClient.getUserById(userId);
+        if(startupRepository.findByUserId(userId) == null){
+            if(user.getRole().toString().equals("STARTUP")){
+                return startupRepository.save(startup);
+            }
+            throw new RoleMismatchException("User Role Mismatch: Expected STARTUP " + " Found " + user.getRole());
         }
-        return startupRepository.save(startup);
+        throw new AlreadyExistingException("Startup with User Id: " + userId + " is Already Existing in Database");
     }
 
     public Startup getStartupById(UUID id) {
