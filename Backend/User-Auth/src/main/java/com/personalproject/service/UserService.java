@@ -1,6 +1,7 @@
 package com.personalproject.service;
 
 import com.personalproject.dto.MyUserDto;
+import com.personalproject.exception.UserNotFoundException;
 import com.personalproject.model.MyUser;
 import com.personalproject.model.UserPrinciple;
 import com.personalproject.repo.UserRepository;
@@ -56,7 +57,7 @@ public class UserService {
         return userDto;
     }
 
-    public Optional<MyUser> getUserById(UUID id) {
-        return userRepository.findById(id);
+    public MyUser getUserById(UUID id) {
+        return userRepository.findById(id).orElseThrow(() -> new UserNotFoundException("User with Id: " + id + " Not Found !!!"));
     }
 }

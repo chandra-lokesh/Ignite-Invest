@@ -1,15 +1,14 @@
 package com.personalproject.service;
 
+import com.personalproject.client.UserClient;
 import com.personalproject.entity.Startup;
-import com.personalproject.enums.Stage;
-import com.personalproject.exception.StartupNotFound;
+import com.personalproject.exception.StartupNotFoundException;
 import com.personalproject.repo.StartupRepository;
+import feign.FeignException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.math.BigDecimal;
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 
@@ -19,21 +18,21 @@ public class StartupService {
     @Autowired
     StartupRepository startupRepository;
 
-//    @Autowired
-//    UserClient userClient;
+    @Autowired
+    UserClient userClient;
 
     public Startup createStartup(Startup startup) {
-//        UUID userId = startup.getUserId();
-//        try{
-//            userClient.getUserById(userId);
-//        } catch (FeignException.NotFound e) {
-//            throw new IllegalArgumentException("User with id " + userId + " does not exist");
-//        }
+        UUID userId = startup.getUserId();
+        try{
+            userClient.getUserById(userId);
+        } catch (FeignException.NotFound e) {
+            throw new IllegalArgumentException("User with id " + userId + " does not exist");
+        }
         return startupRepository.save(startup);
     }
 
     public Startup getStartupById(UUID id) {
-        return startupRepository.findById(id).orElseThrow(() -> new StartupNotFound("Startup with Id: " + id + " Not Found !!!"));
+        return startupRepository.findById(id).orElseThrow(() -> new StartupNotFoundException("Startup with Id: " + id + " Not Found !!!"));
     }
 
     public List<Startup> getAllStartups() {
@@ -42,7 +41,7 @@ public class StartupService {
 
     public Startup updateStartup(UUID id, Startup startup) {
         Startup existingStartup = startupRepository.findById(id)
-                .orElseThrow(() -> new StartupNotFound("Startup with Id: " + id + " Not Found !!!"));
+                .orElseThrow(() -> new StartupNotFoundException("Startup with Id: " + id + " Not Found !!!"));
 
         if (startup.getName() != null)
             existingStartup.setName(startup.getName());

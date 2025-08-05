@@ -33,7 +33,7 @@ public class UserController {
     }
 
     @GetMapping("/getUserById/{id}")
-    public Optional<MyUser> getUserById(@PathVariable UUID id){
+    public MyUser getUserById(@PathVariable UUID id){
         return userService.getUserById(id);
     }
 
