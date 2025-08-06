@@ -30,7 +30,7 @@ public class StartupService {
             if(user.getRole().toString().equals("STARTUP")){
                 return startupRepository.save(startup);
             }
-            throw new RoleMismatchException("User Role Mismatch: Expected STARTUP " + " Found " + user.getRole());
+            throw new RoleMismatchException("User Role Mismatch: Expected - STARTUP Found - " + user.getRole());
         }
         throw new AlreadyExistingException("Startup with User Id: " + userId + " is Already Existing in Database");
     }

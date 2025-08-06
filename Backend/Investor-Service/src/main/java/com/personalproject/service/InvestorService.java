@@ -26,10 +26,10 @@ public class InvestorService {
         UUID userId = investor.getUserId();
         UserDto user = userClient.getUserById(userId);
         if(investorRepository.findByUserId(userId) == null){
-            if(user.getRole().toString().equals("STARTUP")){
+            if(user.getRole().toString().equals("INVESTOR")){
                 return investorRepository.save(investor);
             }
-            throw new RoleMismatchException("User Role Mismatch: Expected STARTUP " + " Found " + user.getRole());
+            throw new RoleMismatchException("User Role Mismatch: Expected - INVESTOR Found - " + user.getRole());
         }
         throw new AlreadyExistingException("Startup with User Id: " + userId + " is Already Existing in Database");
     }

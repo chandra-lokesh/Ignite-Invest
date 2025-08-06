@@ -5,29 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9a72ea8-9dd8-480d-b77e-b144ee4d66fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Backend/Investor-Service/src/main/java/com/personalproject/client/UserClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/Investor-Service/src/main/java/com/personalproject/controller/InvestorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/Investor-Service/src/main/java/com/personalproject/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/Investor-Service/src/main/java/com/personalproject/dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/Investor-Service/src/main/java/com/personalproject/entity/Investor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/Investor-Service/src/main/java/com/personalproject/enums/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/Investor-Service/src/main/java/com/personalproject/enums/Stage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/Investor-Service/src/main/java/com/personalproject/exceptions/AlreadyExistingException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/Investor-Service/src/main/java/com/personalproject/exceptions/InvestorNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/Investor-Service/src/main/java/com/personalproject/exceptions/RoleMismatchException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/Investor-Service/src/main/java/com/personalproject/repo/InvestorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/Investor-Service/src/main/java/com/personalproject/service/InvestorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/Investor-Service/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/Startup-Service/src/main/java/com/personalproject/exception/AlreadyExistingException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend/Startup-Service/src/main/java/com/personalproject/exception/RoleMismatchException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/Investment-Service.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/Investment-Service/src/main/java/com/personalproject/client/InvestorClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/Investment-Service/src/main/java/com/personalproject/client/StartupClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/Investment-Service/src/main/java/com/personalproject/controller/InvestmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/Investment-Service/src/main/java/com/personalproject/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/Investment-Service/src/main/java/com/personalproject/dto/InvestorDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/Investment-Service/src/main/java/com/personalproject/dto/StartupDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/Investment-Service/src/main/java/com/personalproject/entity/Investment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/Investment-Service/src/main/java/com/personalproject/enums/Stage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/Investment-Service/src/main/java/com/personalproject/exceptions/InvestorNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/Investment-Service/src/main/java/com/personalproject/exceptions/StartupNotFound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/Investment-Service/src/main/java/com/personalproject/repo/InvestmentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/Investment-Service/src/main/java/com/personalproject/service/InvestmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Backend/Investment-Service/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/Startup-Service/src/main/java/com/personalproject/client/UserClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/Startup-Service/src/main/java/com/personalproject/client/UserClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/Investor-Service/src/main/java/com/personalproject/service/InvestorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/Investor-Service/src/main/java/com/personalproject/service/InvestorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/Investor-Service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/Investor-Service/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/Startup-Service/src/main/java/com/personalproject/controller/StartupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/Startup-Service/src/main/java/com/personalproject/controller/StartupController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/Startup-Service/src/main/java/com/personalproject/repo/StartupRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/Startup-Service/src/main/java/com/personalproject/repo/StartupRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/Startup-Service/src/main/java/com/personalproject/service/StartupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/Startup-Service/src/main/java/com/personalproject/service/StartupService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/Startup-Service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/Startup-Service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/User-Auth/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/User-Auth/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +39,16 @@
     <projectState path="$PROJECT_DIR$/Backend/Eureka-Server">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/Backend/Investment-Service">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/Backend/Investor-Service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Backend/Investor-Watchlist-Service">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/Backend/Startup-Favorites-Service">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/Backend/Startup-Service">
@@ -71,10 +81,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Exception" />
-        <option value="Class" />
         <option value="Enum" />
         <option value="Interface" />
+        <option value="Class" />
+        <option value="Exception" />
       </list>
     </option>
   </component>
@@ -107,6 +117,7 @@
     "Gradle.Download Sources.executor": "Run",
     "Gradle.Eureka-Server [:EurekaServerApplication.main()].executor": "Run",
     "Gradle.Eureka-Server [:com.personalproject.EurekaServerApplication.main()].executor": "Run",
+    "Gradle.Investment-Service [:com.personalproject.InvestmentServiceApplication.main()].executor": "Run",
     "Gradle.Investor-Service [:com.personalproject.InvestorServiceApplication.main()].executor": "Run",
     "Gradle.Startup-Service [:StartupServiceApplication.main()].executor": "Run",
     "Gradle.Startup-Service [:com.personalproject.StartupServiceApplication.main()].executor": "Run",
@@ -131,15 +142,28 @@
       <recent name="C:\Users\286199\Desktop\Ignite-Invest\Backend\Investor-Service\src\main\java\com\personalproject\exceptions" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.personalproject.exceptions" />
       <recent name="com.personalproject.enums" />
+      <recent name="com.personalproject.exceptions" />
       <recent name="com.personalproject.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.InvestorServiceApplication">
+  <component name="RunManager" selected="Application.InvestmentServiceApplication">
     <configuration name="EurekaServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.personalproject.EurekaServerApplication" />
       <module name="Eureka-Server.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.personalproject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InvestmentServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.personalproject.InvestmentServiceApplication" />
+      <module name="Investment-Service.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.personalproject.*" />
@@ -189,26 +213,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.personalproject.UserServiceApplication" />
-      <module name="User-Service.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.personalproject.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.InvestorServiceApplication" />
-        <item itemvalue="Application.UserAuthApplication" />
-        <item itemvalue="Application.UserServiceApplication" />
         <item itemvalue="Application.StartupServiceApplication" />
         <item itemvalue="Application.EurekaServerApplication" />
+        <item itemvalue="Application.InvestmentServiceApplication" />
+        <item itemvalue="Application.InvestorServiceApplication" />
+        <item itemvalue="Application.UserAuthApplication" />
       </list>
     </recent_temporary>
   </component>

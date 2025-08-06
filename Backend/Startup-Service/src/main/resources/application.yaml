@@ -1,6 +1,6 @@
 server:
   port:
-    8001
+    8002
 
 spring:
   datasource:

@@ -2,6 +2,7 @@ server:
   port:
     8003
 
+# DB
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/ignite_invest
@@ -17,7 +18,7 @@ spring:
       hibernate:
         format_sql: true
 
-
+# EUREKA
 eureka:
   client:
     service-url:

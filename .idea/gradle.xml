@@ -12,10 +12,34 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Backend/Investment-Service" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Backend/Investment-Service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/Backend/Investor-Service" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Backend/Investor-Service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Backend/Investor-Watchlist-Service" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Backend/Investor-Watchlist-Service" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Backend/Startup-Favorites-Service" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Backend/Startup-Favorites-Service" />
           </set>
         </option>
       </GradleProjectSettings>
