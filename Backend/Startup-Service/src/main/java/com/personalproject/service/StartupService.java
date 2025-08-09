@@ -77,4 +77,11 @@ public class StartupService {
         return startupRepository.save(existingStartup);
     }
 
+    public Startup getCurrentStartupProfile(String authHeader) {
+        UserDto userDto = userClient.getCurrentUserProfile(authHeader);
+        System.out.println(userDto);
+        Startup startup = startupRepository.findByUserId(userDto.getId());
+        System.out.println(startup);
+        return startup;
+    }
 }

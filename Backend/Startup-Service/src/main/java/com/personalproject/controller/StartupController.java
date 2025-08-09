@@ -1,5 +1,6 @@
 package com.personalproject.controller;
 
+import com.personalproject.dto.UserDto;
 import com.personalproject.entity.Startup;
 import com.personalproject.service.StartupService;
 import jakarta.ws.rs.Path;
@@ -32,10 +33,10 @@ public class StartupController {
         return startUpService.getAllStartups();
     }
 
-//    @GetMapping("/my-profile")
-//    public Startup getMyProfile(){
-//
-//    }
+    @GetMapping("/my-profile")
+    public Startup getMyProfile(@RequestHeader("Authorization") String authHeader){
+        return startUpService.getCurrentStartupProfile(authHeader);
+    }
 
     @PutMapping("/{id}")
     public Startup updateStartup(@PathVariable UUID id, @RequestBody Startup startup){

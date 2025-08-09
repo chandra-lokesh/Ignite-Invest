@@ -73,4 +73,8 @@ public class InvestorService {
         return investorRepository.save(existingInvestor);
     }
 
+    public Investor getCurrentInvestorProfile(String authHeader) {
+        UserDto userDto = userClient.getCurrentUserProfile(authHeader);
+        return investorRepository.findByUserId(userDto.getId());
+    }
 }

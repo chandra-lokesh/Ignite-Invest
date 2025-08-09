@@ -1,7 +1,7 @@
 server:
-  port:
-    8000
+  port: 8005
 
+# DB
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/ignite_invest
@@ -11,12 +11,13 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     show-sql: true
     properties:
       hibernate:
         format_sql: true
 
+# EUREKA
 eureka:
   client:
     service-url:

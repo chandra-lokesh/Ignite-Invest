@@ -2,10 +2,7 @@ package com.personalproject.controller;
 
 import com.personalproject.client.UserClient;
 import com.personalproject.dto.UserDto;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.UUID;
 
@@ -25,7 +22,7 @@ public class TestContoller {
     }
 
     @GetMapping("/getUserDto/{id}")
-    UserDto getUserDto(@RequestParam UUID id){
+    UserDto getUserDto(@PathVariable UUID id){
         return userClient.getUserById(id);
     }
 }

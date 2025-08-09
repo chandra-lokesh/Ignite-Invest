@@ -31,10 +31,10 @@ public class InvestorController {
         return investorService.getAllInvestors();
     }
 
-//    @GetMapping("/my-profile")
-//    public Startup getMyProfile(){
-//
-//    }
+    @GetMapping("/my-profile")
+    public Investor getMyProfile(@RequestHeader("Authorization") String authHeader){
+        return investorService.getCurrentInvestorProfile(authHeader);
+    }
 
     @PutMapping("/{id}")
     public Investor updateInvestor(@PathVariable UUID id, @RequestBody Investor investor){

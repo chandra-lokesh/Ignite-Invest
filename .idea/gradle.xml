@@ -4,10 +4,18 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Backend/API-Gateway" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Backend/API-Gateway" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/Backend/Eureka-Server" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/backend/Eureka-Server" />
+            <option value="$PROJECT_DIR$/Backend/Eureka-Server" />
           </set>
         </option>
       </GradleProjectSettings>
@@ -47,7 +55,7 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$/Backend/Startup-Service" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/backend/Startup-Service" />
+            <option value="$PROJECT_DIR$/Backend/Startup-Service" />
           </set>
         </option>
       </GradleProjectSettings>

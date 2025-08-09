@@ -2,9 +2,11 @@ package com.personalproject.controller;
 
 import com.personalproject.dto.MyUserDto;
 import com.personalproject.model.MyUser;
+import com.personalproject.model.UserPrinciple;
 import com.personalproject.repo.UserRepository;
 import com.personalproject.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
@@ -32,8 +34,13 @@ public class UserController {
         return userService.getCurrentUserProfile(authHeader);
     }
 
+//    @GetMapping("/me")
+//    public MyUserDto getCurrentUserProfile(@AuthenticationPrincipal UserPrinciple userPrinciple){
+//        return userService.getCurrentUserProfile(userPrinciple);
+//    }
+
     @GetMapping("/getUserById/{id}")
-    public MyUser getUserById(@PathVariable UUID id){
+    public MyUserDto getUserById(@PathVariable UUID id){
         return userService.getUserById(id);
     }
 

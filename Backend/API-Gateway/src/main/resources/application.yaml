@@ -1,0 +1,35 @@
+server:
+  port: 8080
+
+jwt:
+  secret: d2f4b67a1ee3d9c3f1a9725a4cb96e5bb02d4a6e4ac7c38c0bb13e4b4a729b7e3c9ad0b3f6cf58b1a7d15fd3f17e05d7c678ab0418b56d1a79c1f9d4a69a7c6f
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: user-auth
+          uri: lb://USER-AUTH
+          predicates:
+            - Path=/api/auth/**
+        - id: startup-service
+          uri: lb://STARTUP-SERVICE
+          predicates:
+            - Path=/api/startups/**
+        - id: investor-service
+          uri: lb://INVESTOR-SERVICE
+          predicates:
+            - Path=/api/investors/**
+        - id: investment-service
+          uri: lb://INVESTMENT-SERVICE
+          predicates:
+            - Path=/api/investments/**
+      default-filters:
+        - AddRequestHeader=X-Gateway, API-Gateway
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka

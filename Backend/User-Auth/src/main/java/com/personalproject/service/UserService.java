@@ -46,9 +46,10 @@ public class UserService {
         return "Failure";
     }
 
-    public MyUserDto getCurrentUserProfile(String authHeader) {
+    public MyUserDto getCurrentUserProfile(String authHeader) { //  UserPrinciple userPrinciple
         String token = authHeader.substring(7);
         String email = jwtService.extractEmail(token);
+//        String email = userPrinciple.getUsername();
         UserPrinciple userPrinciple =(UserPrinciple) userDetailsService.loadUserByUsername(email);
         MyUserDto userDto = new MyUserDto();
         userDto.setId(userPrinciple.getId());
@@ -57,7 +58,14 @@ public class UserService {
         return userDto;
     }
 
-    public MyUser getUserById(UUID id) {
-        return userRepository.findById(id).orElseThrow(() -> new UserNotFoundException("User with Id: " + id + " Not Found !!!"));
+    public MyUserDto getUserById(UUID id) {
+        MyUser user = userRepository.findById(id).orElse(null);
+        if(user == null)
+            throw new UserNotFoundException("User with Id: " + id + " Not Found !!!");
+        MyUserDto userDto = new MyUserDto();
+        userDto.setId(user.getId());
+        userDto.setEmail(user.getEmail());
+        userDto.setRole(user.getRole());
+        return userDto;
     }
 }
