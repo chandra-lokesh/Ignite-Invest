@@ -1,0 +1,24 @@
+server:
+  port: 8006
+
+# DB
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ignite_invest
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+# EUREKA
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka

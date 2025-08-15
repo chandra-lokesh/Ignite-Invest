@@ -3,6 +3,7 @@ package com.personalproject.service;
 import com.personalproject.client.InvestorClient;
 import com.personalproject.client.StartupClient;
 import com.personalproject.dto.InvestorDto;
+import com.personalproject.dto.StartupDto;
 import com.personalproject.entity.Investment;
 import com.personalproject.exceptions.InvestorNotFound;
 import com.personalproject.exceptions.StartupNotFound;
@@ -12,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -44,11 +46,25 @@ public class InvestmentService {
         return investmentRepository.save(investment);
     }
 
-    public List<UUID> getInvestors(UUID id) {
-        return investmentRepository.findInvestorByStartupId(id);
+    public List<InvestorDto> getInvestorByStartupId(UUID startupId) {
+        List<UUID> investorsIdList = investmentRepository.findInvestorByStartupId(startupId);
+        List<InvestorDto> investorsList = new ArrayList<>();
+        for(UUID i: investorsIdList){
+            InvestorDto investor = investorClient.getInvestorById(i);
+            investor.setId(i);
+            investorsList.add(investor);
+        }
+        return investorsList;
     }
 
-    public List<UUID> getStartups(UUID id) {
-        return investmentRepository.findStartupByInvestorId(id);
+    public List<StartupDto> getStartupByInvestorId(UUID investorId) {
+        List<UUID> startupsIdList = investmentRepository.findStartupByInvestorId(investorId);
+        List<StartupDto> startupsList = new ArrayList<>();
+        for(UUID i: startupsIdList){
+            StartupDto startup = startupClient.getStartupById(i);
+            startup.setId(i);
+            startupsList.add(startup);
+        }
+        return startupsList;
     }
 }

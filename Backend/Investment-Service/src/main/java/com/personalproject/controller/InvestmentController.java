@@ -1,6 +1,7 @@
 package com.personalproject.controller;
 
 import com.personalproject.dto.InvestorDto;
+import com.personalproject.dto.StartupDto;
 import com.personalproject.entity.Investment;
 import com.personalproject.service.InvestmentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,13 +22,13 @@ public class InvestmentController {
         return investmentService.createInvestment(investment);
     }
 
-    @GetMapping("/startup/{id}")
-    List<UUID> getInvestors(@PathVariable UUID id){
-        return investmentService.getInvestors(id);
+    @GetMapping("/startup/{startupId}")
+    List<InvestorDto> getInvestorByStartupId(@PathVariable UUID startupId){
+        return investmentService.getInvestorByStartupId(startupId);
     }
 
-    @GetMapping("/investor/{id}")
-    List<UUID> getStartup(@PathVariable UUID id){
-        return investmentService.getStartups(id);
+    @GetMapping("/investor/{investorId}")
+    List<StartupDto> getStartupByInvestorId(@PathVariable UUID investorId){
+        return investmentService.getStartupByInvestorId(investorId);
     }
 }

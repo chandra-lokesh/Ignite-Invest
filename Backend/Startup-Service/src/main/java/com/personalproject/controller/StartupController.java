@@ -7,6 +7,7 @@ import jakarta.ws.rs.Path;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -35,6 +36,7 @@ public class StartupController {
 
     @GetMapping("/my-profile")
     public Startup getMyProfile(@RequestHeader("Authorization") String authHeader){
+        System.out.println("In Startup controller inside getMyProfile() " + LocalDateTime.now());
         return startUpService.getCurrentStartupProfile(authHeader);
     }
 

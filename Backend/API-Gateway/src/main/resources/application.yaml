@@ -26,6 +26,14 @@ spring:
           uri: lb://INVESTMENT-SERVICE
           predicates:
             - Path=/api/investments/**
+        - id: investor-watchlist-service
+          uri: lb://INVESTOR-WATCHLIST-SERVICE
+          predicates:
+              - Path=/api/watchlist/**
+        - id: startup-favorites-service
+          uri: lb://STARTUP-FAVORITES-SERVICE
+          predicates:
+            - Path=/api/favorites/**
       default-filters:
         - AddRequestHeader=X-Gateway, API-Gateway
 

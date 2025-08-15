@@ -1,6 +1,7 @@
 package com.personalproject.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.personalproject.enums.Stage;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -16,7 +17,8 @@ public class Investor {
 
     @Id
     @GeneratedValue
-    @JsonIgnore
+//    @JsonIgnore
+//    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     private UUID id;
 
     private UUID userId;

@@ -15,7 +15,7 @@ public class Startup {
 
     @Id
     @GeneratedValue
-    @JsonIgnore
+//    @JsonIgnore
     private UUID id;
 
     private UUID userId;

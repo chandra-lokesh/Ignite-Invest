@@ -12,6 +12,9 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
 @Component
 public class JwtFilter implements GlobalFilter, Ordered {
 
@@ -29,7 +32,7 @@ public class JwtFilter implements GlobalFilter, Ordered {
         }
 
         String authHeader = request.getHeaders().getFirst(HttpHeaders.AUTHORIZATION);
-        System.out.println("Auth Header: " + authHeader);
+        System.out.println("Auth Header: " + authHeader + " " + LocalDateTime.now());
 
 
         if (authHeader == null || !authHeader.startsWith("Bearer ")) {
@@ -39,12 +42,12 @@ public class JwtFilter implements GlobalFilter, Ordered {
         }
 
         String token = authHeader.substring(7);
-        System.out.println("Token: " + token);
+        System.out.println("Token: " + token + " " + LocalDateTime.now());
         String email;
 
         try {
             email = jwtService.extractEmail(token);
-            System.out.println("Email: " + email);
+            System.out.println("Email: " + email + " " + LocalDate.now());
             if (email == null || jwtService.isTokenExpired(token)) {
                 System.out.println("Token Expired");
                 exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);
