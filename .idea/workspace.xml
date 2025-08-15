@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9a72ea8-9dd8-480d-b77e-b144ee4d66fa" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c9a72ea8-9dd8-480d-b77e-b144ee4d66fa" name="Changes" comment="missed few changes">
       <change beforePath="$PROJECT_DIR$/Backend/Startup-Service/src/main/java/com/personalproject/entity/StartUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/Startup-Service/src/main/java/com/personalproject/entity/StartUp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,6 +81,9 @@
     &quot;accountId&quot;: &quot;170371b8-2aab-4c15-9dc4-ec131e8be6d4&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -215,6 +217,19 @@
       <option name="presentableId" value="Default" />
       <updated>1752736661604</updated>
     </task>
+    <task id="LOCAL-00001" summary="missed few changes">
+      <option name="closed" value="true" />
+      <created>1755274854278</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1755274854278</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="missed few changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="missed few changes" />
   </component>
 </project>
