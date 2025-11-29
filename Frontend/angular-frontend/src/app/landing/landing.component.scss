@@ -1,0 +1,102 @@
+.landing-container {
+    // font-family: 'Segoe UI', sans-serif;
+    padding: 40px;
+    background-color: #f9f9f9;
+    color: #333;
+  
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 60px;
+  
+      .hero-content {
+        flex: 1;
+        min-width: 300px;
+  
+        h1 {
+          font-size: 3rem;
+          margin-bottom: 20px;
+          color: #1a1a1a;
+        }
+  
+        p {
+          font-size: 1.2rem;
+          margin-bottom: 30px;
+          color: #555;
+        }
+  
+        .hero-buttons {
+          display: flex;
+          gap: 15px;
+  
+          .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+  
+            &.primary {
+              background-color: #007bff;
+              color: white;
+  
+              &:hover {
+                background-color: #0056b3;
+              }
+            }
+  
+            &.secondary {
+              background-color: transparent;
+              border: 2px solid #007bff;
+              color: #007bff;
+  
+              &:hover {
+                background-color: #e6f0ff;
+              }
+            }
+          }
+        }
+      }
+  
+      .hero-image {
+        flex: 1;
+        min-width: 300px;
+        text-align: center;
+  
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 30px;
+  
+      .feature {
+        flex: 1;
+        min-width: 250px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        text-align: center;
+  
+        h3 {
+          margin-bottom: 10px;
+          color: #007bff;
+        }
+  
+        p {
+          color: #666;
+        }
+      }
+    }
+  }
+  

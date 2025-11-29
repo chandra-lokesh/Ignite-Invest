@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Backend/API-Gateway/src/main/java"/>
+	<classpathentry kind="src" path="Backend/API-Gateway/src/test/java"/>
+	<classpathentry kind="src" path="Backend/Eureka-Server/src/main/java"/>
+	<classpathentry kind="src" path="Backend/Eureka-Server/src/test/java"/>
+	<classpathentry kind="src" path="Backend/Interest-APIs/src/main/java"/>
+	<classpathentry kind="src" path="Backend/Interest-APIs/src/test/java"/>
+	<classpathentry kind="src" path="Backend/Investment-Service/src/main/java"/>
+	<classpathentry kind="src" path="Backend/Investment-Service/src/test/java"/>
+	<classpathentry kind="src" path="Backend/Investor-Service/src/main/java"/>
+	<classpathentry kind="src" path="Backend/Investor-Service/src/test/java"/>
+	<classpathentry kind="src" path="Backend/Investor-Watchlist-Service/src/main/java"/>
+	<classpathentry kind="src" path="Backend/Investor-Watchlist-Service/src/test/java"/>
+	<classpathentry kind="src" path="Backend/Startup-Favorites-Service/src/main/java"/>
+	<classpathentry kind="src" path="Backend/Startup-Favorites-Service/src/test/java"/>
+	<classpathentry kind="src" path="Backend/Startup-Service/src/main/java"/>
+	<classpathentry kind="src" path="Backend/Startup-Service/src/test/java"/>
+	<classpathentry kind="src" path="Backend/User-Auth/src/main/java"/>
+	<classpathentry kind="src" path="Backend/User-Auth/src/test/java"/>
+	<classpathentry kind="lib" path="Backend/API-Gateway/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="Backend/Eureka-Server/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="Backend/Interest-APIs/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="Backend/Investment-Service/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="Backend/Investor-Service/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="Backend/Investor-Watchlist-Service/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="Backend/Startup-Favorites-Service/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="Backend/Startup-Service/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="Backend/User-Auth/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="output" path="Backend/API-Gateway/build/classes/java/main"/>
+</classpath>

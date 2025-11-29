@@ -6,6 +6,32 @@
   <component name="ChangeListManager">
     <list default="true" id="c9a72ea8-9dd8-480d-b77e-b144ee4d66fa" name="Changes" comment="missed few changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/.vscode/extensions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/.vscode/tasks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/app.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/app.config.server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/app.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/app.routes.server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/src/app/app.routes.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/src/main.server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/src/server.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/src/styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-frontend/tsconfig.spec.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +140,7 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/286199/Desktop/From Github/finx-be-loan-service",
+    "last_opened_file_path": "C:/Users/286199/Desktop/Ignite-Invest",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
@@ -132,7 +158,7 @@
       <recent name="com.personalproject.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.InterestApIsApplication">
+  <component name="RunManager" selected="Application.UserAuthApplication">
     <configuration name="EurekaServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.personalproject.EurekaServerApplication" />
       <module name="Eureka-Server.main" />
